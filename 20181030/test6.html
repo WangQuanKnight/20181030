@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input").click(function () {
+                $("p").remove("#txt1");
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/.." />
+    <style type="text/css">
+        #div1{
+            background-color:#22a1b2;
+            border:2px solid red;
+            position:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        This is some text in the div.
+        <p>This is a paragraph in the div.</p>
+        <p>This is another paragraph in the div.</p>
+    </div>
+    <p id="txt1">Hello World1</p>
+    <p id="txt2">Hello World2</p>
+    <p id="txt1">Hello World3</p>
+    <br />
+    <input type="button" value="清空div元素" />
+</body>
+</html>

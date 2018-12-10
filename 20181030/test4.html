@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <style type="text/css">
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/.." />
+    <script>
+        $(document).ready(function () {
+            $("input").mouseleave(function () {
+                var txt1 = "<p>Text.</p>";
+                var txt2 = $("<p></p>").text("Text.");
+                var txt3 = document.createElement("p");
+                txt3.innerHTML = "Text.";
+                $("body").appendTo(txt1, txt2, txt3);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>This is a paragraph</p>
+    <input type="button" value="追加文本" />
+</body>
+</html>

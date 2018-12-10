@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/.." />
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        function afterText() {
+            var txt1 = "<b>I</b>";
+            var txt2 = $("<b></b>").text("love");
+            var txt3 = document.createElement("big");
+            txt3.innerHTML = "jQuery";
+            $("img").after(txt1, txt2, txt3);
+        }
+    </script>
+</head>
+<body>
+    <img src="/picture/1.png" alt="W3School Logo"/>
+    <br /><br />
+    <input type="button" onclick="afterText()" value="在图片后面添加文本"/>
+</body>
+</html>
